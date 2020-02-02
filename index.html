@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Conant Construction, LLC.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./style.css">
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="conantconstructionlogo.jpg">
+  <h1>Conant Construction, LLC.</h1>
+  <h4>One Call Does It All</h4>
+<p>(603) 714-2252</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#">Projects</a>
+  <a href="#" class="right">Facebook</a>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h2>We can handle all your needs.</h2>
+    <h5>From roofing, siding, windows, and doors. We have you covered.</h5>
+    <p>For over 40 years, Conant Construction, LLC. has been a one call does it all in the field of general contract construction. From interior to exterior, and even landscape design, we provide quality craftsmanship with each job. New construction or remodels, and repairs. No job is too big or small.</p>
+    <br>
+      </div>
+  <div class="side">
+    <p></p>
+    <h3>Free Quote</h3>
+    <p>Please fill this form out for a free quote. I will do my best to get back to you in a timely manner.</p>
+	
+	<?php 
+	?>
+	<form action="./request.php" method="post" enctype="multipart/form-data">
+		Name: (required)<br />
+		<input type="text" name="contact_name"><br /><br />
+		Project Description: (required)<br />
+		<textarea name="project_desc" rows="3" cols="21"></textarea><br /><br />
+		Contact Information: (required)<br />
+		<input type="radio" name="contact" value="Email" checked> Email<br />
+		<input type="radio" name="contact" value="Text"> Text Message<br />
+		<input type="text" name="contact_value"><br /><br />
+		<div>Upload pictures (optional)</div>
+		<input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+		<input type="file" name="pic[]" multiple /><br /><br />
+		<input type="submit" name="submit">
+	</form>
+  </div>
+</div>
+
+<div class="footer">
+<p>Call us today! <br />
+(603) 714-2252</p>
+  <p>Hours: 7:00am to 7:00pm</p>
+</div>
+
+</body>
+</html>
